@@ -143,8 +143,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if(id == R.id.action_about) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.FIND_GITHUB_URL));
-            startActivity(browserIntent);
+            Intent about = new Intent(this, About.class);
+            startActivity(about);
         }
 
         return super.onOptionsItemSelected(item);
